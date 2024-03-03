@@ -1,11 +1,8 @@
-const audioPlayer = document.getElementById('audioPlayer');
-
-function playSound(soundName) {
-    audioPlayer.src = `./sounds/${soundName}`;
-    audioPlayer.play();
+const audio = document.getElementById("audio");
+function play(src){
+	audio.src=src;
+	audio.play();
 }
-
-function stop() {
-    audioPlayer.pause();
-    audioPlayer.currentTime = 0;
+function stop(){
+	audio.pause();
 }
