@@ -1,42 +1,11 @@
-let myaudio = new Audio();
+const audioPlayer = document.getElementById('audioPlayer');
 
-function applause() {
-    myaudio.src = "./sounds/sound1";
-    myaudio.currentTime = 0;
-    myaudio.play();
-}
-
-function boo() {
-    myaudio.src = "./sounds/sound2";
-    myaudio.currentTime = 0;
-    myaudio.play();
-}
-
-function gasp() {
-    myaudio.src = "./sounds/sound3";
-    myaudio.currentTime = 0;
-    myaudio.play();
-}
-
-function tada() {
-    myaudio.src = "./sounds/sound4";
-    myaudio.currentTime = 0;
-    myaudio.play();
-}
-
-function victory() {
-    myaudio.src = "./sounds/sound5";
-    myaudio.currentTime = 0;
-    myaudio.play();
-}
-
-function wrong() {
-    myaudio.src = "./sounds/sound6";
-    myaudio.currentTime = 0;
-    myaudio.play();
+function playSound(soundName) {
+    audioPlayer.src = `./sounds/${soundName}`;
+    audioPlayer.play();
 }
 
 function stop() {
-    myaudio.pause();
-    myaudio.currentTime = 0;
+    audioPlayer.pause();
+    audioPlayer.currentTime = 0;
 }

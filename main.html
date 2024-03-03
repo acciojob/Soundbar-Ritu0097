@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Player</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <section id="buttons">
-        <button class="btn" onclick="applause()">applause</button>
-        <button class="btn" onclick="boo()">boo</button>
-        <button class="btn" onclick="gasp()">gasp</button>
-        <button class="btn" onclick="tada()">tada</button>
-        <button class="btn" onclick="victory()">victory</button>
-        <button class="btn" onclick="wrong()">wrong</button>
-        <button class="stop" onclick="stop()">stop</button>
+        <button class="btn" onclick="playSound('sound1.mp3')">Applause</button>
+        <button class="btn" onclick="playSound('sound2.mp3')">Boo</button>
+        <button class="btn" onclick="playSound('sound3.mp3')">Gasp</button>
+        <button class="btn" onclick="playSound('sound4.mp3')">Tada</button>
+        <button class="btn" onclick="playSound('sound5.mp3')">Victory</button>
+        <button class="btn" onclick="playSound('sound6.mp3')">Wrong</button>
+        <button class="stop" onclick="stop()">Stop</button>
     </section>
-    <script type="text/javascript" src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
